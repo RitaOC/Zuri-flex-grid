@@ -1,0 +1,161 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* header */
+nav {
+  background-color: black;
+  display: flex;
+  text-align: center;
+}
+
+nav a {
+  padding: 15px 50px;
+  color: bisque;
+  text-decoration: none;
+  font-size: 22px;
+}
+
+.flex {
+  margin-left: 20px;
+}
+
+/* body */
+body {
+  background-color: hsla(0, 0%, 100%, 0.75);
+  justify-content: center;
+
+}
+
+main {
+  display: flex;
+  justify-content: center;
+  background-color: hsl(0, 0%, 95%);
+  font-size: 15px;
+  padding: 55px 0px;
+  margin: 0 30px;
+}
+
+.sedan {
+  max-width: 265px;
+  background-color: hsl(31, 77%, 52%);
+  padding: 40px 40px 0 40px;
+  height: 450px;
+  border-top-left-radius: 8px;
+  border-bottom-left-radius: 8px;
+}
+
+h2 {
+  padding: 30px 0;
+  color: white;
+  font-family: 'Big Shoulders Display', cursive;
+  font-weight: 700;
+}
+
+p {
+  line-height: 1.5rem;
+  color: white;
+  margin-bottom: 5px;
+  font-family: 'Lexend Deca', sans-serif;
+}
+
+button {
+  width: 120px;
+  margin-top: 50px;
+  padding: 10px;
+  text-align: center;
+  border: none;
+  border-radius: 25px;
+}
+
+button:hover {
+  color: white;
+  background: transparent;
+  cursor: grab;
+  border: 1px solid white;
+
+}
+
+.sedan-btn {
+  color: hsl(31, 77%, 52%);
+  position: relative;
+}
+
+.suv {
+  background-color: hsl(184, 100%, 22%);
+  max-width: 265px;
+  height: 450px;
+  padding: 40px 40px 0 40px;
+
+}
+
+.suv-btn {
+  color: hsl(184, 100%, 22%);
+  position: relative;
+}
+
+.suv-btn:hover {
+  color: white;
+  background: transparent;
+  cursor: grab;
+  border: 1px solid white;
+}
+
+.luxury {
+
+  background-color: hsl(179, 100%, 13%);
+  max-width: 265px;
+  height: 450px;
+  padding: 40px 40px 0 40px;
+  border-top-right-radius: 8px;
+  border-bottom-right-radius: 8px;
+}
+
+.luxury-btn {
+  color: hsl(179, 100%, 13%);
+  position: relative;
+}
+
+.luxury-btn:hover {
+  color: white;
+  background: transparent;
+  cursor: grab;
+  border: 1px solid white;
+}
+
+@media screen and (max-width:600px) {
+  .nav {
+    flex-direction: column;
+  }
+
+  .flex {
+    margin-left: 0;
+  }
+
+  body {
+    overflow: scroll;
+  }
+
+  main {
+    display: block;
+    /* padding: 20px; */
+    margin: auto;
+    width: 80%;
+  }
+
+  .sedan {
+    border-radius: 0;
+    margin: auto;
+  }
+
+  .suv {
+    margin: auto;
+  }
+
+  .luxury {
+    border-radius: 0;
+    margin: auto;
+  }
+}
